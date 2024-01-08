@@ -37,7 +37,7 @@
     }
     .content-header {
     width: 100%; /* Full width */
-    background-color: #76b852;
+    background: linear-gradient(45deg, #83eaf1, #63a4ff);
     padding: 20px 0;
     margin-bottom: 30px;
     border-bottom: 5px solid #3498db;
@@ -48,6 +48,7 @@
     max-width: 1920px; /* Maximum width to match 1920px screen resolution */
     padding: 0 15px; /* Padding on the sides */
     margin: auto; /* Center the container */
+    color: #FFFFFF  ;
 }
 
     /* Assuming .content-wrapper wraps all the content */
@@ -136,8 +137,8 @@
         <div class="card card-custom">
             <div class="card-body">
                 <i class="fa fa-calendar fa-3x text-white mb-3"></i>
-                <h5 class="info-box-text">Total Appointments</h5>
-                <span class="info-box-number">32</span>
+                <h5 class="info-box-text">Total Janji Temu</h5>
+                <span class="info-box-number">15</span>
             </div>
         </div>
     </div>
@@ -147,8 +148,8 @@
         <div class="card card-custom" style="background: linear-gradient(to right, #56ab2f, #a8e063);">
             <div class="card-body">
                 <i class="fa fa-user-md fa-3x text-white mb-3"></i>
-                <h5 class="info-box-text">Patients Treated</h5>
-                <span class="info-box-number">128</span>
+                <h5 class="info-box-text">Pasien Langganan</h5>
+                <span class="info-box-number">150</span>
             </div>
         </div>
     </div>
@@ -158,7 +159,7 @@
         <div class="card card-custom" style="background: linear-gradient(to right, #ff512f, #f09819);">
             <div class="card-body">
                 <i class="fa fa-envelope fa-3x text-white mb-3"></i>
-                <h5 class="info-box-text">New Messages</h5>
+                <h5 class="info-box-text">Pesan Baru</h5>
                 <span class="info-box-number">5</span>
             </div>
         </div>
@@ -169,8 +170,8 @@
         <div class="card card-custom" style="background: linear-gradient(to right, #1fa2ff, #12d8fa);">
             <div class="card-body">
                 <i class="fa fa-bed fa-3x text-white mb-3"></i>
-                <h5 class="info-box-text">Available Beds</h5>
-                <span class="info-box-number">20</span>
+                <h5 class="info-box-text">Ruang Periksa  kosong</h5>
+                <span class="info-box-number">5</span>
             </div>
         </div>
     </div>

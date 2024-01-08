@@ -195,10 +195,20 @@ h1 {
 
 <body class="hold-transition login-page">
     <div class="container-fluid flex flex-col justify-center items-center text-white p-5"
-        style="height: 400px; background-color: #007bff;">
+        style=" height: 400px;
+            background-color: #007bff;
+            background-image: url('assets/images/bgindex.jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            display: flex;
+            flex-direction">
         <h1 class="font-weight-bold mb-3">Sistem Temu Janji Pasien - Dokter</h1>
         <h5>
             Bimbingan Karir 2023 Bidang Website
+        </h5>
+        <h5>
+        Hastyantoko Dwiki Kahingide - A11.2020.12979
         </h5>
     </div>
     <div class="container mt-5">
