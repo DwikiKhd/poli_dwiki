@@ -12,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $jamSelesai = $_POST["jamSelesai"];
     $aktif = $_POST['aktif'];
 
-    // Sebelum meng-update jadwal_periksa, atur semua nilai 'aktif' menjadi 'N' untuk dokter tertentu
-    $resetAktifQuery = "UPDATE jadwal_periksa SET aktif='N' WHERE id_dokter='$idDokter'";
+    // Sebelum meng-update jadwal_periksa, atur semua nilai 'aktif' menjadi 'T' untuk dokter tertentu
+    $resetAktifQuery = "UPDATE jadwal_periksa SET aktif='T' WHERE id_dokter='$idDokter'";
     mysqli_query($mysqli, $resetAktifQuery);
 
     // Hanya satu jadwal yang boleh aktif, atur nilai 'aktif' menjadi 'Y' untuk jadwal yang sedang di-edit
@@ -32,7 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else{
         // Query untuk menambahkan data obat ke dalam tabel
-        $query = "UPDATE jadwal_periksa SET hari = '$hari', jam_mulai = '$jamMulai', jam_selesai = '$jamSelesai', aktif = '$aktif' WHERE id = '$id'";
+            $query = "UPDATE jadwal_periksa SET hari = '$hari', jam_mulai = '$jamMulai', jam_selesai = '$jamSelesai', aktif = '$aktif' WHERE id = '$id'";
+        
 
         
 
